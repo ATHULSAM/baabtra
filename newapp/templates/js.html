@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<input type="text" id="username" placeholder="username">
+<input type="password" id="password" placeholder="password">
+<button onclick="loginfun()">login</button>
+<p id="res"></p>
+<body>
+    
+    
+ 
+    <script>
+       function loginfun(){
+           
+           username = document.getElementById('username').value
+           password = document.getElementById('password').value
+
+            console.log(username)
+
+
+        if ((username=='user')&&(password = '123')){
+               document.getElementById('res').innerHTML = "login success";
+           }
+           else
+           {
+               document.getElementById('res').innerHTML = "incorrect username and password";
+
+           }
+       }
+    </script>
+</body>
+</html>
